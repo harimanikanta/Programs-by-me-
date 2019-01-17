@@ -1,6 +1,6 @@
 Read Json into dataframe:
 
-spark.read.option("multiLine", true).option("mode", "PERMISSIVE").json(""D:/jsonfiles/TACrulesConsolidated.json"")
+spark.read.option("multiLine", true).option("mode", "PERMISSIVE").json("filepath")
 
 Push dataframe into Mysql Syntax:
 
