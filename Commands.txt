@@ -1,0 +1,14 @@
+Read Json into dataframe:
+
+spark.read.option("multiLine", true).option("mode", "PERMISSIVE").json(""D:/jsonfiles/TACrulesConsolidated.json"")
+
+Push dataframe into Mysql Syntax:
+
+dataFrameToSave.write.format("jdbc").
+      option("url", url).
+      option("driver", driver).
+      option("user", username).
+      option("password", password).
+      option("dbtable", tableName).
+      mode(saveMode).
+      save(tableName) 
